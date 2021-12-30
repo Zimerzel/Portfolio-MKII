@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { Helmet } from 'react-helmet-async';
 import { init } from 'ityped';
 import { motion } from 'framer-motion';
+import Contact from '../components/Contact';
 
 const AboutPage = () => {
   const topicsRef = useRef(null);
@@ -124,6 +125,7 @@ const AboutPage = () => {
             </div>
           </section>
         </div>
+        <Contact />
         </motion.div>
       </>
     );
