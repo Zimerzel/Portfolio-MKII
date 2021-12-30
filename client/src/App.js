@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 import Header from './components/Header';
 import Home from './components/Home';
-import About from './components/About';
+import AboutPage from './pages/AboutPage';
 import Work from './components/Work';
 import Footer from './components/Footer';
 import PageNoMatch from './components/PageNoMatch';
@@ -31,7 +31,7 @@ function App() {
             <main>
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
+                <Route path="/about" element={<AboutPage />} />
                 <Route path="/work" element={<Work />} />
                 {/* <Route path="/project-:id" element={<SingleProject />} /> */}
                 <Route path="*" element={<PageNoMatch />} />
