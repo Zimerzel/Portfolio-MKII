@@ -18,3 +18,18 @@ code {
   height: 400px;
   object-fit:cover;
 }
+
+#title-bg{
+  position: relative;
+  height: 600px;
+  display: block;
+  width: 100%;
+  object-fit:cover;
+  /* background-color: ; */
+  /* background-image:
+  url("https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center, 50%, 50%; */
+  ;
+}

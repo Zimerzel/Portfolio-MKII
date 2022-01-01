@@ -2,11 +2,14 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { LoremIpsum } from 'react-lorem-ipsum'
-import PIC from '../assets/Images/2.svg'
 import Contact from './Contact'
+import HomeFeaturedProjects from './FeaturedProjects';
+
 
 
 function Home (){
+    
+
     return(
         <> 
         <motion.div
@@ -23,10 +26,9 @@ function Home (){
                 />
             </Helmet>
             <div>
-                <section>
-                    <div id="home-intro">
-                        <img src={PIC} alt="" width="100%"/>
-                    </div>
+                <section id="title-bg">
+                    <div className="banner">
+                    </div>        
                 </section>
                 <section>
                     <div>
@@ -44,7 +46,7 @@ function Home (){
                     <div>
                         <h2>Featured Projects.</h2>
                         <div>
-                            <p>project cards here</p>
+                            <HomeFeaturedProjects />
                         </div>
                         <button>All Projects</button>
                     </div>
