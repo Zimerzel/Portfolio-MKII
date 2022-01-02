@@ -5,6 +5,31 @@ import { Environment, Html, OrbitControls, useProgress } from "@react-three/drei
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Suspense } from "react";
 
+const Lights = () => {
+return(
+  <>
+        {/* Ambient Light illuminates lights for all objects */}
+        <ambientLight intensity={0.5} />
+      {/* Diretion light */}
+      <directionalLight position={[100, 100, 100]} intensity={2} />
+      <directionalLight position={[-100, 100, -100]} intensity={2} />
+      <directionalLight
+        castShadow
+        position={[0, 10, 0]}
+        intensity={0}
+        shadow-mapSize-width={1024}
+        shadow-mapSize-height={1024}
+        shadow-camera-far={50}
+        shadow-camera-left={-10}
+        shadow-camera-right={10}
+        shadow-camera-top={10}
+        shadow-camera-bottom={-10}
+      />
+      {/* Spotlight Large overhead light */}
+      <spotLight intensity={3} position={[1000, 0, 0]} castShadow />
+  </>
+)
+}
 
 function Loader(){
   const { progress } = useProgress()
@@ -24,6 +49,9 @@ export default function Porsche() {
   return (
     <div className="App">
       <Canvas>
+      <ambientLight intensity={0.3} />
+      <directionalLight color="white" position={[0, 0, 5]} />
+      <Lights />
         <Suspense fallback={<Loader />}>
           <Model />
           <OrbitControls />
