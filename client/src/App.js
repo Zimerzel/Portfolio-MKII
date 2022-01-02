@@ -11,6 +11,7 @@ import Work from './components/Work';
 import Footer from './components/Footer';
 import PageNoMatch from './components/PageNoMatch';
 import ScrollToTop from './components/ScrollToTop';
+import Porsche from './components/Three.js/Porsche';
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
           <div className="site-wrapper">
             <ScrollToTop />
             <Header />
+            <Porsche />
             <main>
               <Routes>
                 <Route path="/" element={<Home />} />
