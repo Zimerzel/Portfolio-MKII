@@ -8,9 +8,7 @@ import { Suspense } from "react";
 const Lights = () => {
 return(
   <>
-        {/* Ambient Light illuminates lights for all objects */}
-        <ambientLight intensity={0.5} />
-      {/* Diretion light */}
+      <ambientLight intensity={0.5} />
       <directionalLight position={[100, 100, 100]} intensity={2} />
       <directionalLight position={[-100, 100, -100]} intensity={2} />
       <directionalLight
@@ -25,7 +23,6 @@ return(
         shadow-camera-top={10}
         shadow-camera-bottom={-10}
       />
-      {/* Spotlight Large overhead light */}
       <spotLight intensity={3} position={[1000, 0, 0]} castShadow />
   </>
 )
@@ -40,7 +37,7 @@ const Model = () => {
   const gltf = useLoader(GLTFLoader, "./scene.gltf");
   return (
     <>
-      <primitive object={gltf.scene} scale={0.4} dispose={null}/>
+      <primitive object={gltf.scene} scale={1.4} dispose={null}/>
     </>
   );
 };
@@ -54,7 +51,7 @@ export default function Porsche() {
       <Lights />
         <Suspense fallback={<Loader />}>
           <Model />
-          <OrbitControls />
+          <OrbitControls enablePan={true} enableZoom={false} enableRotate={true}/>
           {/* <Environment preset="lobby" background /> */}
         </Suspense>
       </Canvas>
