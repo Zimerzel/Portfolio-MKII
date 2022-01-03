@@ -1,3 +1,11 @@
+.porsche{
+  background-color: #0f0f0f !important;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./assets/Images/metal.jpg");
+  background-size: cover;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +13,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: black;
 }
 
 code {

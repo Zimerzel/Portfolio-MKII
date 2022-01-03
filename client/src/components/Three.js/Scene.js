@@ -5,6 +5,7 @@ export default function Model({ ...props }) {
   const group = useRef()
   const { nodes, materials } = useGLTF('/scene.gltf')
   return (
+    <div className="porsche">
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
@@ -65,6 +66,7 @@ export default function Model({ ...props }) {
         </group>
       </group>
     </group>
+    </div>
   )
 }
 

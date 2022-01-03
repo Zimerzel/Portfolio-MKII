@@ -11,6 +11,7 @@ import Work from './components/Work';
 import Footer from './components/Footer';
 import PageNoMatch from './components/PageNoMatch';
 import ScrollToTop from './components/ScrollToTop';
+import Landing from './components/Landing';
 import Porsche from './components/Three.js/Porsche';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             <Porsche />
             <main>
               <Routes>
+                {/* <Route path="/" element={<Landing />} /> */}
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/work" element={<Work />} />
