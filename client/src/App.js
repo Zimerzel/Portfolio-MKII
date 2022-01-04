@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 import Header from './components/Header';
 import Home from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-import Work from './components/Work';
+import WorkPage from './pages/WorkPage';
 import Footer from './components/Footer';
 import PageNoMatch from './components/PageNoMatch';
 import ScrollToTop from './components/ScrollToTop';
@@ -35,7 +35,7 @@ function App() {
                 {/* <Route path="/" element={<Landing />} /> */}
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<AboutPage />} />
-                <Route path="/work" element={<Work />} />
+                <Route path="/work" element={<WorkPage />} />
                 {/* <Route path="/project-:id" element={<SingleProject />} /> */}
                 <Route path="*" element={<PageNoMatch />} />
               </Routes>
