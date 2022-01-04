@@ -5,13 +5,12 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 import Header from './components/Header';
-import Home from './components/Home';
+import Home from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import Work from './components/Work';
 import Footer from './components/Footer';
 import PageNoMatch from './components/PageNoMatch';
 import ScrollToTop from './components/ScrollToTop';
-import Landing from './components/Landing';
 import Porsche from './components/Three.js/Porsche';
 
 function App() {

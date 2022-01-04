@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useLoader } from "@react-three/fiber";
-import { Html, OrbitControls, PresentationControls, useProgress } from "@react-three/drei";
+import { DeviceOrientationControls, Html, OrbitControls, PerspectiveCamera, useProgress } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Suspense } from "react";
 
@@ -10,12 +10,12 @@ const Lights = () => {
 return(
   <>
       <ambientLight intensity={0.5} />
-      <directionalLight position={[100, 100, 100]} intensity={2} />
-      <directionalLight position={[-100, 100, -100]} intensity={2} />
+      <directionalLight position={[100, 100, 100]} intensity={0.8} color="white" castShadow/>
+      <directionalLight position={[-100, 100, -100]} intensity={2} color="white" castShadow/>
       <directionalLight
         castShadow
-        position={[0, 10, 0]}
-        intensity={0}
+        position={[10, 60, 10]}
+        intensity={2}
         shadow-mapSize-width={1024}
         shadow-mapSize-height={1024}
         shadow-camera-far={50}
@@ -23,8 +23,9 @@ return(
         shadow-camera-right={10}
         shadow-camera-top={10}
         shadow-camera-bottom={-10}
+        color="#454343"
       />
-      <spotLight intensity={3} position={[1000, 0, 0]} castShadow />
+      <spotLight intensity={2} position={[1000, 0, 0]} castShadow color="white"/>
   </>
 )
 }
@@ -38,36 +39,61 @@ const Model = () => {
   const gltf = useLoader(GLTFLoader, "./scene.gltf");
   return (
     <>
-      <primitive object={gltf.scene} scale={1.0} dispose={null}/>
+      <primitive object={gltf.scene} scale={60.0} dispose={null}/>
     </>
   );
 };
 
+
+let scale = 62
+var fovNum = 100
+var x = 0;
+var y = 200;
+var z = 120
+
+// let scale = 62
+// var fovNum = 70
+// var x = 60;
+// var y = 38;
+// var z = 80
+
+const coord = [
+  x,
+  y,
+  z
+]
+
+var s = window.matchMedia("(max-width:1080px")
+
+function viewChange(s){
+if (s.matches){
+  fovNum = 100;
+  x = 0;
+  y = 200;
+  z = 120;
+  scale = 60
+}
+}
+
+viewChange(s)
+
 export default function Porsche() {
   return (
     <div className="porsche">
-      <Canvas>
+      <Canvas frameloop="demand" camera={{fov: fovNum, position: coord}}>
       <ambientLight intensity={0.3} />
-      <directionalLight color="white" position={[0, 0, 5]} />
+      <directionalLight color="grey" position={[0, 0, 5]} />
       <Lights />
         <Suspense fallback={<Loader />}>
-          <PresentationControls
-            global={false} // Spin globally or by dragging the model
-            snap={true} // Snap-back to center (can also be a spring config)
-            speed={.5} // Speed factor
-            zoom={.5} // Zoom factor when half the polar-max is reached
-            rotation={[0, 0, 0]} // Default rotation
-          >
+          <DeviceOrientationControls />
           <Model />
-          </PresentationControls>
-          {/* <Environment
-            background={false} // Whether to affect scene.background
-            files={['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg']} // Array of cubemap files OR single equirectangular file
-            path={'../../assets/images'} // Path to the above file(s)
-            scene={undefined} // adds the ability to pass a custom THREE.Scene
-          /> */}
-          <OrbitControls enablePan={true} enableZoom={false} enableRotate={true}/>
-          {/* <Environment preset="lobby" background /> */}
+          <OrbitControls 
+          enablePan={true} enableZoom={false} 
+          enableDamping={true} maxPolarAngle={1.2}
+          minAzimuthAngle={-0.1}
+          maxAzimuthAngle={Math.PI * 0.08} enableRotate={true} 
+          pa
+          />
         </Suspense>
       </Canvas>
     </div>
