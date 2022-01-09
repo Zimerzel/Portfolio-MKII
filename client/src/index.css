@@ -10,6 +10,10 @@
   background-position-x: center;
 }
 
+*{
+  font-family: Azonix;
+}
+
 :root{
 
 }
@@ -257,28 +261,6 @@ background-size: cover;
   text-align: center;
 }
 
-.home__contact{
-  width: 90%;
-  padding-top: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-}
-
-.contact__info{
-  width: 90%;
-  padding-top: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-}
-
 .about__skills{
   display: flex;
   width: 90%;
@@ -329,9 +311,53 @@ margin-right: auto;
 /* Contact */
 
 .contact__info{
-  background-color: grey;
+  width: 90%;
+  padding-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+
 }
 
+.contact__buttons{
+  width: 100vw;
+}
+
+.contact__buttons button{
+  width: 120px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container{
+  width: 100vw;
+}
+
+.form{
+  display: block;
+  width: 80%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group{
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-control {
+  width: 90%;
+  padding: 10px;
+  resize: none;
+}
 
 /* Home Featured */
 
@@ -439,3 +465,5 @@ margin-right: auto;
   }
 
 }
+
+

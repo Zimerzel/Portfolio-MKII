@@ -4,7 +4,13 @@ function Contact() {
   return (
     <>
     <div className="contact__info" id="contact">
-      <h2>Contact Me</h2>
+        <div>
+          <h2>Get in Touch.</h2>
+          <p>I'm ready for challenges and opportunities. Please send me an email if you want to chat with me.</p>
+        </div>
+        <div className="contact__buttons">
+          <button className='button__top-bottom'>View Work</button>
+        </div>
         <br />
         <div className="container">
           <form target="_blank" action="https://formsubmit.co/zach.jags99@gmail.com" method="POST" className="form">

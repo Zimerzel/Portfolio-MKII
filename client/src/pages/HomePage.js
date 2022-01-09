@@ -48,19 +48,12 @@ function Home (){
                     </div>
                 </section>
                 <HomeFeaturedProjects />
-                <section>
-                    <h2>Get in Touch.</h2>
-                    <p>I'm ready for challenges and opportunities. Please send me an email if you want to chat with me.</p>
-                    <div className="contact__buttons">
-                        <button>View Work</button>
-                        <button>Email Me</button>
-                    </div>
-                </section>
+                <br />
+                <Contact />
                 <section>
                     <h3>Footer things</h3>
                     <p>Links to media</p>
                 </section>
-                <Contact />
             </div>
         </motion.div>
         </>
