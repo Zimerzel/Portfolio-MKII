@@ -24,11 +24,6 @@ function Contact() {
             <button type="submit" className="form-group-btn">Submit Form</button>
           </form>
         </div>
-        <h3>Prefer another method?</h3>
-        <p className="contact-info">
-          Email: Zach.imerzel@gmail.com<br/>
-          Phone: (303)902-0091<br/>
-        </p>
       </div>
       <br />
       <br />

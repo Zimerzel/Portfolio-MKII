@@ -1,6 +1,6 @@
 .porsche{
   background-color: #0f0f0f !important;
-  height: 90vh;
+  height: 98vh;
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
@@ -71,16 +71,24 @@ p{
 
 .header p{
   position: absolute;
+  max-width: 480px;
+  padding-left: 20px;
+  padding-right: 20px;
   top: 50px;
   left: 90px;
   color: whitesmoke;
   font-family: Azonix;
 }
 
+mark{
+  background-color: #9147fe;
+}
+
 .arrow i{
   position: absolute;
-  top: 88vh;
+  top: 96vh;
   right: 10px;
+  color:#9147fe
 }
 
 .arrow {
@@ -122,6 +130,97 @@ nav ul li a{
   text-decoration: none;
 }
 
+.nav__dropdown{
+  visibility: hidden;
+}
+
+.nav__dropdown ul{
+  background-color: #9147fe;
+  list-style-type: none;
+  border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 1080px) {
+  .main__nav {
+    background-color: lightblue;
+    visibility: hidden;
+  }
+  .nav__dropdown{
+    visibility: visible;
+    margin-right: -80px;
+    margin-top: -20px;
+  }
+}
+
+@media only screen and (max-width:750px){
+  .nav__dropdown{
+    margin-right: -130px;
+    margin-top: 50px;
+  }
+
+  .dropbtn{
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+
+/* Dropdown Button */
+
+.dropbtn {
+  background-image: url("./assets/Images/menu.png");
+  background-size: cover;
+  border: rgb(153, 153, 153) 2px solid !important;
+  border-radius: 10px;
+  height: 60px;
+  width: 60px;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  min-width: 160px;
+  width: 80vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(216, 214, 214);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  text-decoration: underline 2px solid;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
 .home__about{
   width: 80%;
   margin-right: auto;
@@ -129,18 +228,25 @@ nav ul li a{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding:60px
+}
 
+.home__featured__container{
+background-image:  linear-gradient(180deg, #0f0f0f, #242424, #0f0f0f );
+background-size: cover;
 }
 
 .home__featured{
-background-color: #0f0f0f;
-margin-right: auto;
-margin-left: auto;
-width: 100%;
+  background-image: linear-gradient(180deg, #242424,#0f0f0f, #242424 );
+  margin-right: auto;
+  margin-left: auto;
+  height: 80%;
+  width: 90%;
+  border-radius: 20px;
+  z-index: 1;
 }
 
 .home__featured__projects{
-  background-color: rgb(75, 75, 75) !important;
   background-size: cover;
   padding-top: 20px;
   margin-right: auto;
@@ -171,4 +277,165 @@ width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+}
+
+.about__skills{
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about__text{
+  width: 80%;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.row{
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+
+.column{
+  flex: 40%;
+  text-align: center;
+}
+
+.skill__column{
+  width: 33.33%;
+  padding:10px;
+  text-align: center;
+}
+
+.skills ul li , .design ul li{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-right: 50px;
+}
+
+.interested-topics{
+display: flex;
+justify-content: center;
+width: 80%;
+padding: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+/* Contact */
+
+.contact__info{
+  background-color: grey;
+}
+
+
+/* Home Featured */
+
+.home__featured__projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90vw;
+}
+
+.home__featured__projects h2{
+  text-align: center;
+  color: #0f0f0f;
+  font-weight: 600;
+}
+
+.home__featured__projects__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  width: 100vw;
+  border-radius: 5px;
+  background-color: #4a4a4b;
+}
+
+.featured__project__card{
+  margin: 10px auto;
+  background-color: #252525;
+  width: 90%;
+  max-width: 480px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.featured__project__card:hover{
+  transform: translateY(-5px) translateX(-5px);
+  box-shadow: 0.5rem 0.5rem hsl(264, 99%, 64%, 90%);
+}
+
+.project__card__content img{
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 5px;
+}
+
+.project__card_text{
+  padding: 0.8rem;
+}
+
+.all__works__btn{
+  width: 120px;
+  margin: 20px auto;
+  text-decoration: none;
+  font-family: Azonix;
+}
+
+.button__top-bottom {
+  border: 2px solid #9147fe;
+  background: linear-gradient(to bottom, #9147fe 50%, #252525 50%);
+  background-size: 100% 200%;
+  background-position: bottom;
+  transition: all .35s ease-out;
+  color: white;
+}
+
+.button__top-bottom:hover {
+  border: 2px solid rgb(255, 255, 255);
+  background-position: top;
+  color: rgb(0, 0, 0);
+}
+
+
+@media all and (min-width: 450px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  .home__featured__projects__content{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+@media all and (min-width: 1040px) {
+  h2 {
+    font-size: 3rem;
+  }
+  .home__featured__projects__content{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .home__featured__projects__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4px;
+  }
+
+  h2 {
+    grid-column: 1 / 4;
+  }
+
+  .all__works__btn {
+    grid-column: 1 / 4;
+  }
+
 }

@@ -13,7 +13,7 @@ const Header = () => {
                 <Nav />
             </div>
             <div className="arrow bounce">
-                <i class='bx bxs-down-arrow'></i>
+                <i className='bx bxs-down-arrow'></i>
             </div>
         </div>  
         </>

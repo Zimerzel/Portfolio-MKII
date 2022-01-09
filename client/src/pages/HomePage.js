@@ -1,8 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-import Contact from '../components/Contact'
-import HomeFeaturedProjects from '../components/FeaturedProjects';
+import HomeFeaturedProjects from '../components/FeaturedPortfolio';
+import Contact from '../components/Contact';
 
 
 
@@ -40,14 +40,15 @@ function Home (){
                         </p>
                     </div>
                 </section>
-                <section className='home__featured'>
-                    <div>
+                <section className='home__featured__container'>
+                    <div className='home__featured'>
                         <div>
-                            <HomeFeaturedProjects />
+                            
                         </div>
                     </div>
                 </section>
-                <section className='home__contact'>
+                <HomeFeaturedProjects />
+                <section>
                     <h2>Get in Touch.</h2>
                     <p>I'm ready for challenges and opportunities. Please send me an email if you want to chat with me.</p>
                     <div className="contact__buttons">
@@ -59,6 +60,7 @@ function Home (){
                     <h3>Footer things</h3>
                     <p>Links to media</p>
                 </section>
+                <Contact />
             </div>
         </motion.div>
         </>

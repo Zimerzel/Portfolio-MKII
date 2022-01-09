@@ -44,8 +44,8 @@ const AboutPage = () => {
           />  
         </Helmet>
           <div>
-          <section className="about-content">
-            <article className="about-text">
+          <section className="about__content">
+            <article className="about__text">
               <h1 data-aos="fade-up">About Me.</h1>
               <p data-aos="fade-up" data-aos-delay="50">
                 I have lived most of my life in Boulder, CO and was taught to
@@ -73,36 +73,42 @@ const AboutPage = () => {
               </p>
             </article>
           </section>
-          <section className="skills" data-aos="fade-up" data-aos-delay="100">
-            <div>
-              <div>
+          <section className="about__skills" data-aos="fade-up" data-aos-delay="100">
+            <div className="row">
+              <div className="skills column">
                   <h3>Development Skills</h3>
-                  <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>Express</li>
-                    <li>Redux</li>
-                    <li>React</li>
-                    <li>Vue</li>
-                    <li>BootStrap</li>
-                    <li>jQuery</li>
-                    <li>Sequelize</li>
-                    <li>SQL</li>
-                    <li>SQLAlchemy</li>
-                    <li>NoSQL</li>
-                    <li>MySQL</li>
-                    <li>MongoDB</li>
-                    <li>Mongoose</li>
-                    <li>Bcrypt</li>
-                    <li>JWT</li>
-                    <li>Stripe</li>
-                    <li>Node</li>
-                    <li>Git/GitHub</li>
-                  </ul>
+                    <div className="row">
+                      <ul className="skill_column">
+                        <li>Bcrypt</li>
+                        <li>JWT</li>
+                        <li>Stripe</li>
+                        <li>Node</li>
+                        <li>Git/GitHub</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                      </ul>
+                      <ul className="skill_column">
+                        <li>NoSQL</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>Mongoose</li>
+                        <li>Python</li>
+                        <li>Express</li>
+                        <li>Redux</li>
+                      </ul>
+                      <ul className="skill_column">
+                        <li>jQuery</li>
+                        <li>Sequelize</li>
+                        <li>SQL</li>
+                        <li>SQLAlchemy</li>
+                        <li>React</li>
+                        <li>Vue</li>
+                        <li>BootStrap</li>
+                      </ul>
+                    </div>
               </div>
-              <div>
+              <div className="design column">
                 <h3>Design Skills</h3>
                 <ul>
                   <li>Adobe XD</li>

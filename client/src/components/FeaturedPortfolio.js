@@ -14,18 +14,18 @@ const HomeFeaturedProjects = () => {
 
   return (
     <section className="home__featured__projects">
-      <div className="home-featured-projects-content">
+      <div className="home__featured__projects__content">
         <h2>Featured Projects</h2>
         {homeFeaturedProjects &&
           homeFeaturedProjects.map((homeFeaturedProject, index) => {
             return (
-              <div className="featured-project-card" key={index}>
-                <div className="project-card-content">
+              <div className="featured__project__card" key={index}>
+                <div className="project__card__content">
                   <img
-                    src={homeFeaturedProject.thumbnailImgUrl}
+                    src={homeFeaturedProject.image}
                     alt={`cover of the project ${homeFeaturedProject.title}`}
                   />
-                  <div className="project-card-text">
+                  <div className="project__card__text">
                     <a
                       href={homeFeaturedProject.livesite}
                       target="_blank"
@@ -39,7 +39,7 @@ const HomeFeaturedProjects = () => {
               </div>
             );
           })}
-        <Link className="work-btn homepage-btn all-works-btn" to="/work">
+        <Link className="all__works__btn button__top-bottom" to="/work">
           All Projects
           <div className="overlay"></div>
         </Link>
