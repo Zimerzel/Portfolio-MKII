@@ -75,57 +75,49 @@ const AboutPage = () => {
           </section>
           <section className="about__skills" data-aos="fade-up" data-aos-delay="100">
             <div className="row">
-              <div className="skills column">
+              <div className="skills">
                   <h3>Development Skills</h3>
-                    <div className="row">
-                      <ul className="skill_column">
-                        <li>Bcrypt</li>
-                        <li>JWT</li>
-                        <li>Stripe</li>
-                        <li>Node</li>
-                        <li>Git/GitHub</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                      </ul>
-                      <ul className="skill_column">
-                        <li>NoSQL</li>
-                        <li>MySQL</li>
-                        <li>MongoDB</li>
-                        <li>Mongoose</li>
-                        <li>Python</li>
-                        <li>Express</li>
-                        <li>Redux</li>
-                      </ul>
-                      <ul className="skill_column">
-                        <li>jQuery</li>
-                        <li>Sequelize</li>
-                        <li>SQL</li>
-                        <li>SQLAlchemy</li>
-                        <li>React</li>
-                        <li>Vue</li>
-                        <li>BootStrap</li>
-                      </ul>
-                    </div>
-              </div>
-              <div className="design column">
-                <h3>Design Skills</h3>
-                <ul>
-                  <li>Adobe XD</li>
-                  <li>Illustrator</li>
-                  <li>Photoshop</li>
-                </ul>
+                    <ul className="skill_column">
+                      <li>Bcrypt</li>
+                      <li>JWT</li>
+                      <li>Stripe</li>
+                      <li>Node</li>
+                      <li>Git/GitHub</li>
+                      <li>HTML5</li>
+                      <li>CSS3</li>
+                      <li>JavaScript</li>
+                      <li>NoSQL</li>
+                      <li>MySQL</li>
+                      <li>MongoDB</li>
+                      <li>Mongoose</li>
+                      <li>Python</li>
+                      <li>Express</li>
+                      <li>Redux</li>
+                      <li>jQuery</li>
+                      <li>Sequelize</li>
+                      <li>SQL</li>
+                      <li>SQLAlchemy</li>
+                      <li>React</li>
+                      <li>Vue</li>
+                      <li>BootStrap</li>
+                    </ul>
+                  <h3 className="design__skills">Design Skills</h3>
+                  <ul className="design__skills">
+                    <li>Adobe XD</li>
+                    <li>Illustrator</li>
+                    <li>Photoshop</li>
+                  </ul>
               </div>
             </div>
           </section>
-          <section className="interested-topics">
-            <div className="interested-topics-content">
+          <section className="interested__topics">
+            <div className="interested__topics__content">
               <h2>
                 Here are the topics that I am{' '}
-                <mark className="interested-topics-hightlight">interested</mark>{' '}
+                <mark className="interested__topics__hightlight">interested</mark>{' '}
                 in...
               </h2>
-              <p className="topics-text">
+              <p className="topics__text">
                 <span ref={topicsRef}></span>
               </p>
             </div>
