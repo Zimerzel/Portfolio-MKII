@@ -9,7 +9,7 @@ const WorkPage = () => {
 
   useEffect(() => {
     const featuredProjects = rawProjectData.filter((project) =>
-      project.category.includes('featured-home')
+      project.category.includes('all')
     );
     setHomeFeaturedProjects(featuredProjects);
   }, []);
