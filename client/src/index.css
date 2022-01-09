@@ -322,7 +322,14 @@ margin-right: auto;
 
 }
 
+.contact__info p{
+  text-align: center;
+  margin: 0 auto;
+  width: 75%;  
+}
+
 .contact__buttons{
+  margin-top: 15px;
   width: 100vw;
 }
 
@@ -357,6 +364,22 @@ margin-right: auto;
   width: 90%;
   padding: 10px;
   resize: none;
+}
+
+.button__left-right {
+  margin-top: 10px;
+  border: 2px solid #9147fe;
+  background: linear-gradient(to right, #9147fe 50%, #252525 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: all .35s ease-out;
+  color: white;
+}
+
+.button__left-right:hover {
+  border: 2px solid rgb(255, 255, 255);
+  background-position: left;
+  color: rgb(0, 0, 0);
 }
 
 /* Home Featured */
@@ -467,3 +490,33 @@ margin-right: auto;
 }
 
 
+/* Footer */
+
+.footer__container{
+  width: 100%;
+}
+
+
+.footer__container p {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer__container a{
+  padding: 20px;
+  color: #9147fe;
+}
+
+.footer__container a:hover{
+  color: rgb(255, 255, 255); 
+  transition: all 0.5s ease-in-out;
+}
+
+.footer__container h1{
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: 300;
+}

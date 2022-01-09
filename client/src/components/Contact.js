@@ -27,7 +27,7 @@ function Contact() {
             <div className="form-group">
               <textarea placeholder="Your Message" className="form-control" name="message" rows="10" required></textarea>
             </div>
-            <button type="submit" className="form-group-btn">Submit Form</button>
+            <button type="submit" className="button__left-right">Submit Form</button>
           </form>
         </div>
       </div>

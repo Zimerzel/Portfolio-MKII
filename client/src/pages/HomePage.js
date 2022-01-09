@@ -51,8 +51,7 @@ function Home (){
                 <br />
                 <Contact />
                 <section>
-                    <h3>Footer things</h3>
-                    <p>Links to media</p>
+
                 </section>
             </div>
         </motion.div>
