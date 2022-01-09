@@ -48,28 +48,22 @@ const AboutPage = () => {
             <article className="about__text">
               <h1 data-aos="fade-up">About Me.</h1>
               <p data-aos="fade-up" data-aos-delay="50">
-                I have lived most of my life in Boulder, CO and was taught to
-                embrace adventure. Colorado is known for being an unpredictable
-                environment as the weather and events that follow can change by
-                the minute. Growing up in an ever-changing environment has taught
-                me many things but the most important lesson was to be able to
-                adapt. Initially, I had no desire to enter the world of tech and I
-                refused to accept it’s increasing integration in our lives. Being
-                young and growing up alongside the social media era, I had a
-                narrow view on technology. I wanted people to socialize instead of
-                tweet, to call instead of text, and for people to eat their food
-                without taking another #mylunch photo. That’s exactly where I was
-                wrong, software is so much larger than just media. Adaptation
-                doesn't always have to be an alteration of your person or the
-                thing itself, but it can also be a change in perspective. Once my
-                perspective changed, I saw just how many opportunities there were
-                to personally or indirectly create positive change in the world
-                through software development. Software could be and often is
-                developed for hospitals, research facilities, prosthetics and
-                environmental needs. The applications are limitless. While I've
-                just begun my adventure into software development, I can say I am
-                extremely proud to be a part of this field. Feel free to browse my
-                work and don't hesitate to reach out with any questions/comments!
+              I have lived most of my life in Boulder, CO and was taught 
+              to embrace adventure. Colorado is known for being an unpredictable 
+              environment as the weather and events that follow can change by 
+              the minute. Growing up in an ever-changing environment has taught 
+              me many things but the most important lesson was to be able to 
+              adapt. As someone who loves tech and thrives in fast paced and 
+              constantly adapting environments, becoming a software developer 
+              felt like a natural progression. My training and hands-on projects 
+              experience at the University of Texas(Austin), has allowed me to 
+              further develop my passion and skill sets in the web development 
+              industry. With solid fundamentals in various front-end programming 
+              languages as well as web design, I mostly enjoy working with React 
+              JS, HTML5, CSS3, and JavaScript. In addition to web development, 
+              one of my greatest interests is building vehicles. I enjoy the 
+              process of slowing down and learning how all of the components 
+              work with one another… And maybe occasional throwing wrenches. 
               </p>
             </article>
           </section>
@@ -110,7 +104,7 @@ const AboutPage = () => {
               </div>
             </div>
           </section>
-          <section className="interested__topics">
+          <section className="interested__topics" data-aos="fade-up" data-aos-delay="250">
             <div className="interested__topics__content">
               <h2>
                 Here are the topics that I am{' '}

@@ -261,17 +261,31 @@ background-size: cover;
   text-align: center;
 }
 
+/* About */
+
+.about__content{
+width: 80%;
+margin: 40px auto;
+}
+
+.about__text h1{
+  background-color: #9147fe;
+  width: 130px;
+  height: 25px;
+  padding-top: 10px;
+  padding-left: 5px;
+  border-radius: 10px;
+}
+
+.about__text p{
+  text-indent: 30px;
+}
+
 .about__skills{
   display: flex;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.about__text{
-  width: 80%;
-  margin-right:auto;
-  margin-left:auto;
 }
 
 .row{
@@ -297,12 +311,26 @@ background-size: cover;
 }
 
 .interested__topics{
-  margin-top: 100px;
+  margin-top: 100px !important;
+  width: 80%;
+  height: 150px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 20px;
 }
 
 .interested__topics__content{
-width: 80%;
+width: 100%;
 margin: 0 auto;
+}
+
+.interested__topics__content h2{
+  padding: 20px;
+  font-size: large
+}
+
+.interested__topics__content p{
+  margin-top: -30px;
 }
 
 /* Contact */
