@@ -9,7 +9,7 @@ function Contact() {
           <p>I'm ready for challenges and opportunities. Please send me an email if you want to chat with me.</p>
         </div>
         <div className="contact__buttons">
-          <button className='button__top-bottom'>View Work</button>
+          <button className='button__top-bottom' id="work-btn">View Work</button>
         </div>
         <br />
         <div className="container">

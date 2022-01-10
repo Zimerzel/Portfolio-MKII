@@ -4,7 +4,13 @@ import { Helmet } from 'react-helmet-async';
 import Contact from '../components/Contact';
 import { rawProjectData } from '../data/rawProjectData';
 
+
 const WorkPage = () => {
+  document.getElementById('work-btn').addEventListener("load", removeBtn())
+  function removeBtn(){
+    document.getElementById('work-btn').style.visibility="hidden"
+  }
+
   const [homeFeaturedProjects, setHomeFeaturedProjects] = useState(null);
 
   useEffect(() => {
