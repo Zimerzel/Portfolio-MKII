@@ -54,26 +54,30 @@ const Nav = () => {
           <div id="myDropdown" className="dropdown-content">
             <ul>
               <li>
-                <NavLink to="/" className="nav-link">
+                <NavLink to="/" className="nav-link" onClick={navDrop}>
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/work" className="nav-link">
+                <NavLink to="/work" className="nav-link" onClick={navDrop}>
                   Work
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about" className="nav-link">
+                <NavLink to="/about" className="nav-link" onClick={navDrop}>
                   About
                 </NavLink>
               </li>
               <li>
-                <HashLink to="#contact" smooth className="nav-link">
+                <HashLink to="#contact" smooth className="nav-link" onClick={navDrop}>
                   Contact
                 </HashLink>
               </li>
+              <li>
+                <i class='bx bx-moon change-theme' id="theme-button" onClick={navDrop}></i>
+              </li>
             </ul>
+            
           </div>
         </div>
       </nav>

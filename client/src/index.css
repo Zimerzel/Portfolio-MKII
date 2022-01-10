@@ -18,6 +18,13 @@
 
 }
 
+.scrollToTop i{
+  position: fixed;
+  bottom: 10px;
+  right: 1.5vw;
+  color: #9147fe;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -395,23 +402,22 @@ margin: 0 auto;
 /* Home Featured */
 
 .home__featured__projects{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   width: 90vw;
 }
 
-.home__featured__projects h2{
+.home__featured__projects__content h2{
   text-align: center;
   color: #000000;
   font-weight: 600;
+  
 }
 
 .home__featured__projects__content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1rem;
-  width: 100vw;
+  width: 90%;
+  margin: 0 auto;
   border-radius: 5px;
   background-color: #3a3a3b;
 }
@@ -464,12 +470,29 @@ margin: 0 auto;
 }
 
 
+@media all and (min-width: 300px){
+  .header__info p{
+    left: 50px;
+    top: 40px;
+  }
+  .header__info h1{
+    font-size: 1.7rem;
+    left: 55px;
+    text-align: center;
+  }
+  .scrollToTop i{
+    right: 40px;
+  }
+
+  .home__featured__projects__content{
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 4px;
+  }
+}
+
 @media all and (min-width: 450px) {
   h2 {
     font-size: 2.5rem;
-  }
-  .home__featured__projects__content{
-    grid-template-columns: repeat(1,1fr);
   }
   .row{
     width: 100%;
@@ -482,6 +505,7 @@ margin: 0 auto;
   }
   .home__featured__projects__content{
     grid-template-columns: repeat(1,1fr);
+    column-gap: 4px;
   }
   .row{
     width: 90%;

@@ -13,7 +13,7 @@ const HomeFeaturedProjects = () => {
   }, []);
 
   return (
-    <section className="home__featured__projects">
+    <section className="__projects">
       <div className="home__featured__projects__content">
         <h2>Featured Projects</h2>
         {homeFeaturedProjects &&

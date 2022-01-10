@@ -10,8 +10,10 @@ import AboutPage from './pages/AboutPage';
 import WorkPage from './pages/WorkPage';
 import Footer from './components/Footer';
 import PageNoMatch from './components/PageNoMatch';
-import ScrollToTop from './components/ScrollToTop';
+import ScrollButton from './components/ScrollButton';
 import Porsche from './components/Three.js/Porsche';
+
+
 
 function App() {
   useEffect(() => {
@@ -27,7 +29,7 @@ function App() {
       <HelmetProvider>
         <BrowserRouter>
           <div className="site-wrapper">
-            <ScrollToTop />
+            <ScrollButton />
             <Header />
             <Porsche />
             <main>
