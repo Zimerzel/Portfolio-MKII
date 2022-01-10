@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 function Contact() {
   return (
@@ -9,7 +10,7 @@ function Contact() {
           <p>I'm ready for challenges and opportunities. Please send me an email if you want to chat with me.</p>
         </div>
         <div className="contact__buttons">
-          <button className='button__top-bottom' id="work-btn">View Work</button>
+          <button className='button__top-bottom' id="work-btn"><Link to="work" className='work__link'>View Work</Link></button>
         </div>
         <br />
         <div className="container">

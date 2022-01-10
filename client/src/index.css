@@ -485,6 +485,15 @@ margin: 0 auto;
   color: rgb(0, 0, 0);
 }
 
+.work__link{
+  color: white;
+  text-decoration: none;
+}
+
+.work__link:hover{
+  color: black;
+}
+
 
 @media all and (min-width: 300px){
   .header__info{
