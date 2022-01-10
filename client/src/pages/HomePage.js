@@ -29,7 +29,7 @@ function Home (){
                     <div className="banner">
                     </div>        
                 </section>
-                <section data-aos="fade-right" data-aos-delay="50">
+                <section>
                     <div className='home__about'>
                         <h2>One step at a time.</h2>
                         <p> 

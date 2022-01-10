@@ -73,9 +73,6 @@ const Nav = () => {
                   Contact
                 </HashLink>
               </li>
-              <li>
-                <i class='bx bx-moon change-theme' id="theme-button" onClick={navDrop}></i>
-              </li>
             </ul>
             
           </div>

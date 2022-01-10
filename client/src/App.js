@@ -38,7 +38,7 @@ function App() {
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/work" element={<WorkPage />} />
                 {/* <Route path="/project-:id" element={<SingleProject />} /> */}
-                <Route path="*" element={<PageNoMatch />} />
+                <Route element={<PageNoMatch />} />
               </Routes>
             </main>
             <Footer />
