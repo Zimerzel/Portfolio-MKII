@@ -6,7 +6,7 @@ function Contact() {
     <>
     <div className="contact__info" id="contact">
         <div>
-          <h2>Get in Touch.</h2>
+          <h2>Get in Touch<span>.</span></h2>
           <p>I'm ready for challenges and opportunities. Please send me an email if you want to chat with me.</p>
         </div>
         <div className="contact__buttons">

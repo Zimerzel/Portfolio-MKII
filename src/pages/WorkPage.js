@@ -39,7 +39,7 @@ const WorkPage = () => {
     </Helmet>
     <section className="projects">
       <div className="projects__content">
-        <h2>Projects.</h2>
+        <h2>Projects<span>.</span></h2>
         {homeFeaturedProjects &&
           homeFeaturedProjects.map((homeFeaturedProject, index) => {
             return (

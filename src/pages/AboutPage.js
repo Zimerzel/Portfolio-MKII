@@ -46,7 +46,7 @@ const AboutPage = () => {
           <div>
           <section className="about__content">
             <article className="about__text">
-              <h1 data-aos="fade-up">About Me.</h1>
+              <h1 data-aos="fade-up">About Me<span>.</span></h1>
               <p data-aos="fade-up" data-aos-delay="50">
               I have lived most of my life in Boulder, CO and was taught 
               to embrace adventure. Colorado is known for being an unpredictable 

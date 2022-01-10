@@ -23,7 +23,7 @@ import weatherMock3 from '../assets/Images/Weather/mock3.png'
 export const rawProjectData = [
   {
     id: 'MealMatch',
-    image: '' ,
+    image: 'https://user-images.githubusercontent.com/79726069/116947491-8ab70000-ac42-11eb-9352-da6b3edb4c04.PNG' ,
     imageMock1: mealMock1,
     imageMock2: mealMock2,
     imageMock3: mealMock3,
