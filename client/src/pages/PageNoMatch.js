@@ -13,7 +13,7 @@ const PageNoMatch = () => {
         <title>Zach Imerzel | Page Not Found</title>
         <meta
           name="description"
-          content="Page 404 for Jimmy Tan's portfolio."
+          content="Page 404 for Zach Imerzel's portfolio."
         />
       </Helmet>
       <section className="page-not-found-content">

@@ -29,7 +29,7 @@ function Home (){
                     <div className="banner">
                     </div>        
                 </section>
-                <section>
+                <section data-aos="fade-right" data-aos-delay="50">
                     <div className='home__about'>
                         <h2>One step at a time.</h2>
                         <p> 
@@ -41,11 +41,6 @@ function Home (){
                     </div>
                 </section>
                 <section className='home__featured__container'>
-                    <div className='home__featured'>
-                        <div>
-                            
-                        </div>
-                    </div>
                 </section>
                 <HomeFeaturedProjects />
                 <br />

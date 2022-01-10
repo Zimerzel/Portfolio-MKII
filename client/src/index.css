@@ -73,14 +73,19 @@ p{
   font-family: Arkship;
 }
 
-.header h1{
+.header__info{
+  position: relative;
+  margin-left: 4%;
+}
+
+.header__info h1{
   position: absolute;
   left: 90px;
   color: whitesmoke;
   font-family: Azonix;
 }
 
-.header p{
+.header__info p{
   position: absolute;
   max-width: 480px;
   padding-left: 20px;
@@ -251,6 +256,17 @@ nav ul li a{
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+}
+
+/* Work Page */
+.projects{
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.projects__content{
+
 }
 
 /* About */
@@ -471,13 +487,17 @@ margin: 0 auto;
 
 
 @media all and (min-width: 300px){
+  .header__info{
+    margin-right: -2% !important;
+  }
+  
   .header__info p{
-    left: 50px;
+    left: 40px;
     top: 40px;
   }
   .header__info h1{
     font-size: 1.7rem;
-    left: 55px;
+    left: 45px;
     text-align: center;
   }
   .scrollToTop i{
@@ -510,6 +530,9 @@ margin: 0 auto;
   .row{
     width: 90%;
   }
+  nav{
+    right: 90px;
+  }
 }
 
 @media all and (min-width: 1080px) {
@@ -525,6 +548,9 @@ margin: 0 auto;
 
   .all__works__btn {
     grid-column: 1 / 4;
+  }
+  nav{
+    right: 110px;
   }
 
 }

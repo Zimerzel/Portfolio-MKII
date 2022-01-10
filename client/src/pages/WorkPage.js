@@ -28,18 +28,19 @@ const WorkPage = () => {
         content="A list of projects to showcase Zach Imerzel's work as a Front-End Developer."
       />
     </Helmet>
-    <section className="home__featured__projects">
-      <div className="home__featured__projects__content">
+    <section className="projects">
+      <div className="projects__content">
         <h2>Projects.</h2>
         {homeFeaturedProjects &&
           homeFeaturedProjects.map((homeFeaturedProject, index) => {
             return (
-              <div className="featured__project__card" key={index}>
+              <div className="project__card" key={index}>
                 <div className="project__card__content">
                   <img
                     src={homeFeaturedProject.image}
                     alt={`cover of the project ${homeFeaturedProject.title}`}
                   />
+                </div>
                   <div className="project__card__text">
                     <a
                       href={homeFeaturedProject.livesite}
@@ -51,7 +52,6 @@ const WorkPage = () => {
                     <p>{homeFeaturedProject.subtitle}</p>
                   </div>
                 </div>
-              </div>
             );
           })}
       </div>
