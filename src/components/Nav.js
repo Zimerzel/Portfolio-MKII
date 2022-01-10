@@ -1,7 +1,6 @@
 //Nav.js component, to return a navigation for header section
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import Note from '../assets/Images/note.svg'
 
 const Nav = () => {
   //when user clicks a menu link or the element lost focus within the nav menu, close it

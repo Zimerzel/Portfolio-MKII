@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { useLoader } from "@react-three/fiber";
-import { DeviceOrientationControls, Html, OrbitControls, PerspectiveCamera, useProgress } from "@react-three/drei";
+import { DeviceOrientationControls, Html, OrbitControls, useProgress } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Suspense } from "react"
 
@@ -44,7 +44,6 @@ const Model = () => {
 };
 
 
-let scale = 62
 var fovNum = 100
 var x = 0;
 var y = 200;
@@ -70,7 +69,6 @@ if (s.matches){
   x = 0;
   y = 200;
   z = 120;
-  scale = 60
 }
 }
 

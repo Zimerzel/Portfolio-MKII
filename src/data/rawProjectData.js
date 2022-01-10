@@ -1,16 +1,32 @@
 /* Meal Match Images */
-import mealMatchImg from '../assets/Images/MealMatch/mealMatch.png'
+import mealMock1 from '../assets/Images/MealMatch/mock1.png'
+import mealMock2 from '../assets/Images/MealMatch/mock2.png'
+import mealMock3 from '../assets/Images/MealMatch/mock3.png'
 
-
+/* Pikes Peak */
+import pikesMock1 from '../assets/Images/Pikes/mock1.png'
+import pikesMock2 from '../assets/Images/Pikes/mock2.png'
+import pikesMock3 from '../assets/Images/Pikes/mock3.png'
 
 /* Portfolio */
 import portfolio from '../assets/Portfolio/portfolio.png'
+import portMock1 from '../assets/Portfolio/mock1.png'
+import portMock2 from '../assets/Portfolio/mock2.png'
+import portMock3 from '../assets/Portfolio/mock3.png'
+
+/* Weather */
+import weatherMock1 from '../assets/Images/Weather/mock1.png'
+import weatherMock2 from '../assets/Images/Weather/mock2.png'
+import weatherMock3 from '../assets/Images/Weather/mock3.png'
 
 
 export const rawProjectData = [
   {
     id: 'MealMatch',
-    image: mealMatchImg ,
+    image: '' ,
+    imageMock1: mealMock1,
+    imageMock2: mealMock2,
+    imageMock3: mealMock3,
     title: 'MealMatch',
     subtitle: 'Date night made simple',
     briefDescription:
@@ -34,6 +50,9 @@ export const rawProjectData = [
   {
     id: 'PPIHC',
     image: 'https://user-images.githubusercontent.com/79726069/138946590-25457630-3955-4c31-b419-08beb6c8a6d7.PNG',
+    imageMock1: pikesMock1,
+    imageMock2: pikesMock2,
+    imageMock3: pikesMock3,
     title: 'Pikes Peak International Hill Climb ',
     subtitle: 'Informational site for the Pikes Peak International Hill Climb',
     briefDescription:
@@ -61,13 +80,16 @@ export const rawProjectData = [
   {
     id: 'portfolio',
     image: portfolio,
+    imageMock1: portMock1,
+    imageMock2: portMock2,
+    imageMock3: portMock3,
     title: 'Portfolio',
     subtitle: 'React Portfolio Website',
     briefDescription:
       'A portfolio website that was designed and developed as a platform to showcase my design and development skills as a front-end developer.',
     tags: ['React', 'HTML5', 'CSS3', 'Three'],
-    livesite: '',
-    github: '',
+    livesite: '#',
+    github: 'https://github.com/Zimerzel/Portfolio-MKII',
     category: ['featured', 'featured-home', 'all'],
     moreInfo: true,
     overview:
@@ -79,6 +101,9 @@ export const rawProjectData = [
   },
   {
     id: 'Weather Today',
+    imageMock1: weatherMock1,
+    imageMock2: weatherMock2,
+    imageMock3: weatherMock3,
     image: 'https://user-images.githubusercontent.com/79726069/116834786-46195f00-ab85-11eb-848a-25b745b30e5d.PNG' ,
     title: 'Weather Today',
     subtitle: 'Find out the weather anywhere in the world',
@@ -100,50 +125,53 @@ export const rawProjectData = [
       // sliderDescription: 'enter description here...',
     },
   },
-  {
-    id: 'Social Network',
-    image: 'https://user-images.githubusercontent.com/79726069/127700891-51e938e1-6f59-4af1-881c-22a7301d0d33.PNG' ,
-    title: 'Social Network',
-    subtitle: 'Social Network back end',
-    briefDescription:
-      'Basic social network app back end.',
-    tags: [ 'HTML5', 'JavaScript', 'CSS3', 'Mongoose','Moment', 'Express', 'GitHub'],
-    // livesite: 'https://misn0147.github.io/meal_match/',
-    github: 'https://github.com/Zimerzel/Social-Network',
-    category: ['all'],
-    moreInfo: false,
-    overview:
-      '',
-    duration: '1 Weeks',
-    team: ['Zach Imerzel'],
-    roles: ['Back-End Development'],
-    stack: [ 'HTML5', 'JavaScript', 'CSS3', 'Mongoose','Moment', 'Express', 'GitHub'],
-    imgSlider: {
-      sliderTitle: 'Site Screenshots',
-      // sliderDescription: 'enter description here...',
-    },
-  },
-  {
-    id: 'Sofa Spud',
-    image: 'https://user-images.githubusercontent.com/79726069/131258624-7afeec32-51c4-4a09-a93d-7b02dbe8a166.PNG' ,
-    title: 'Sofa Spud',
-    subtitle: 'Movie night made simple',
-    briefDescription:
-      'A dynamic web app for users to browse, search and bookmark movies.',
-    tags: ['React, JWT-Decode, Graphql, Apollo, Mongoose, Express, Bcrypt, Stripe', 'GitHub'],
-    livesite: 'https://protected-earth-79211.herokuapp.com/',
-    github: 'https://github.com/godwinbw/sofa-spud',
-    category: [ 'all'],
-    moreInfo: false,
-    overview:
-      '',
-    duration: '2 Weeks',
-    team: ['Zach Imerzel, Eric Webber'],
-    roles: ['UI/UX Design', 'Front-End Development', 'Back-End Development'],
-    stack: ['React, JWT-Decode, Graphql, Apollo, Mongoose, Express, Bcrypt, Stripe', 'GitHub'],
-    imgSlider: {
-      sliderTitle: 'Site Screenshots',
-      // sliderDescription: 'enter description here...',
-    },
-  },
+  // {
+  //   id: 'Social Network',
+  //   image: 'https://user-images.githubusercontent.com/79726069/127700891-51e938e1-6f59-4af1-881c-22a7301d0d33.PNG' ,
+  //   title: 'Social Network',
+  //   subtitle: 'Social Network back end',
+  //   briefDescription:
+  //     'Basic social network app back end.',
+  //   tags: [ 'HTML5', 'JavaScript', 'CSS3', 'Mongoose','Moment', 'Express', 'GitHub'],
+  //   // livesite: 'https://misn0147.github.io/meal_match/',
+  //   github: 'https://github.com/Zimerzel/Social-Network',
+  //   category: ['all'],
+  //   moreInfo: false,
+  //   overview:
+  //     '',
+  //   duration: '1 Weeks',
+  //   team: ['Zach Imerzel'],
+  //   roles: ['Back-End Development'],
+  //   stack: [ 'HTML5', 'JavaScript', 'CSS3', 'Mongoose','Moment', 'Express', 'GitHub'],
+  //   imgSlider: {
+  //     sliderTitle: 'Site Screenshots',
+  //     // sliderDescription: 'enter description here...',
+  //   },
+  // },
+  // {
+  //   id: 'Sofa Spud',
+  //   image: 'https://user-images.githubusercontent.com/79726069/131258624-7afeec32-51c4-4a09-a93d-7b02dbe8a166.PNG' ,
+  //   title: 'Sofa Spud',
+  //   subtitle: 'Movie night made simple',
+  //   briefDescription:
+  //     'A dynamic web app for users to browse, search and bookmark movies.',
+  //   tags: ['React, JWT-Decode, Graphql, Apollo, Mongoose, Express, Bcrypt, Stripe', 'GitHub'],
+  //   livesite: 'https://protected-earth-79211.herokuapp.com/',
+  //   github: 'https://github.com/godwinbw/sofa-spud',
+  //   category: [ 'all'],
+  //   moreInfo: false,
+  //   overview:
+  //     '',
+  //   duration: '2 Weeks',
+  //   team: ['Zach Imerzel, Eric Webber'],
+  //   roles: ['UI/UX Design', 'Front-End Development', 'Back-End Development'],
+  //   stack: ['React, JWT-Decode, Graphql, Apollo, Mongoose, Express, Bcrypt, Stripe', 'GitHub'],
+  //   imgSlider: {
+  //     sliderTitle: 'Site Screenshots',
+  //     // sliderDescription: 'enter description here...',
+  //   },
+  // },
+
+  /* Add working projects back in by just adding raw data */
+
 ];

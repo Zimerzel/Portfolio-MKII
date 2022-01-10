@@ -6,7 +6,10 @@ import { rawProjectData } from '../data/rawProjectData';
 
 
 const WorkPage = () => {
-  document.getElementById('work-btn').addEventListener("load", removeBtn())
+  var el = document.getElementById('work-btn');
+  if(el){
+    el.addEventListener('load', removeBtn());
+  }
   function removeBtn(){
     document.getElementById('work-btn').style.visibility="hidden"
   }
@@ -41,13 +44,24 @@ const WorkPage = () => {
           homeFeaturedProjects.map((homeFeaturedProject, index) => {
             return (
               <div className="project__card" key={index}>
-                <div className="project__card__content">
+                <div className="project__content">
                   <img
-                    src={homeFeaturedProject.image}
+                    src={homeFeaturedProject.imageMock1}
                     alt={`cover of the project ${homeFeaturedProject.title}`}
+                    id="imageMock1"
+                  />
+                  <img
+                    src={homeFeaturedProject.imageMock2}
+                    alt={`cover of the project ${homeFeaturedProject.title}`}
+                    id="imageMock2"
+                  />
+                  <img
+                    src={homeFeaturedProject.imageMock3}
+                    alt={`cover of the project ${homeFeaturedProject.title}`}
+                    id="imageMock3"
                   />
                 </div>
-                  <div className="project__card__text">
+                  <div className="project__text">
                     <a
                       href={homeFeaturedProject.livesite}
                       target="_blank"
@@ -56,8 +70,10 @@ const WorkPage = () => {
                       <h3>{homeFeaturedProject.title}</h3>
                     </a>
                     <p>{homeFeaturedProject.subtitle}</p>
+                    <button className='button__top-bottom work__btn'><a href={homeFeaturedProject.github} target="_blank" rel="noreferrer" className='work__link'>Github</a></button>
+                    <button className='button__top-bottom work__btn'><a href={homeFeaturedProject.livesite} target="_blank" rel="noreferrer" className='work__link'>Live Site</a></button>
                   </div>
-                </div>
+              </div>
             );
           })}
       </div>

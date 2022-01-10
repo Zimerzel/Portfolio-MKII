@@ -25,7 +25,7 @@ const ScrollButton = () =>{
   
   return (
     <button onClick={scrollToTop} className='scrollToTop' style={{display: visible ? 'inline' : 'none'}}>
-     <i class='bx bx-up-arrow-circle bx-md'></i>
+     <i className='bx bx-up-arrow-circle bx-md'></i>
     </button>
   );
 }

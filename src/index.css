@@ -452,6 +452,82 @@ margin: 0 auto;
   box-shadow: 0.5rem 0.5rem hsl(264, 99%, 64%, 90%);
 }
 
+/* Work */
+
+.projects__content{
+  width: 100%;
+}
+
+.project__card{
+  position: relative;
+  background-color: #252525;
+  max-width: 1400px;
+  padding: 20px 0;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+#imageMock1{
+  max-width: 600px;
+  margin: 0 auto;
+}
+#imageMock2{
+  max-width: 120px;
+  position: absolute;
+  top: 100px;
+  right: 20%;
+  visibility: hidden;
+}
+#imageMock3{
+  max-width: 250px;
+  position: absolute;
+  top: 30px;
+  left: 10%;
+  visibility: hidden;
+}
+
+.project__text{
+  text-align: center;
+  height: 180px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project__text p{
+  margin: 2px;
+  padding-bottom: 10px;
+}
+
+.project__text h3{
+  color: #ffffff;
+  background-color: #9147fe;
+  width:250px;
+  max-width: 600;
+  height: 20px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.project__text a{
+  padding: 10px;
+  text-decoration: none;
+}
+
+.project__content{
+padding: 10px;
+}
+
+.project__content img{
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 5px;
+}
+
+
 .project__card__content img{
   display: block;
   width: 100%;
@@ -460,7 +536,8 @@ margin: 0 auto;
 }
 
 .project__card_text{
-  padding: 0.8rem;
+  padding: 20px;
+  text-decoration: none;
 }
 
 .all__works__btn{
@@ -488,6 +565,13 @@ margin: 0 auto;
 .work__link{
   color: white;
   text-decoration: none;
+  padding-l: 10px;
+}
+
+.work__btn{
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 120px;
 }
 
 .work__link:hover{
@@ -517,6 +601,9 @@ margin: 0 auto;
     grid-template-columns: repeat(1,1fr);
     column-gap: 4px;
   }
+  .project__card{
+    font-size: 0.8rem;
+  }
 }
 
 @media all and (min-width: 450px) {
@@ -542,6 +629,12 @@ margin: 0 auto;
   nav{
     right: 90px;
   }
+  .project__card{
+    font-size: 0.9rem;
+  }
+  .project__text h3{
+    width: 400px;
+  }
 }
 
 @media all and (min-width: 1080px) {
@@ -564,7 +657,11 @@ margin: 0 auto;
 
 }
 
-
+@media all and (min-width: 1500px) {
+  #imageMock2, #imageMock3{
+    visibility: visible;
+  }
+}
 /* Footer */
 
 .footer__container{
