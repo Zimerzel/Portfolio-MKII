@@ -34,7 +34,6 @@ function App() {
             <Porsche />
             <main>
               <Routes>
-                {/* <Route path="/" element={<Landing />} /> */}
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/work" element={<WorkPage />} />
