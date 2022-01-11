@@ -603,6 +603,11 @@ padding: 10px;
   color: black;
 }
 
+@media all and (max-width:500px){
+  .porsche{
+    pointer-events: none;
+  }
+}
 
 @media all and (min-width: 300px){
   .header{
