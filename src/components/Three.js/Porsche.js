@@ -1,9 +1,8 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useLoader } from "@react-three/fiber";
-import { DeviceOrientationControls, Html, OrbitControls, useProgress } from "@react-three/drei";
+import { DeviceOrientationControls, Html, OrbitControls, useGLTF, useProgress } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { Suspense } from "react"
 
 const Lights = () => {
 return(
@@ -29,13 +28,17 @@ return(
 )
 }
 
+
 function Loader(){
   const { progress } = useProgress()
   return <Html center>{progress} % loaded</Html>
 }
 
+
+/* GLTF LOADER */
+
 const Model = () => {
-  const gltf = useLoader(GLTFLoader, "./scene.gltf");
+  const gltf = useLoader(GLTFLoader, "./scene1.gltf");
   return (
     <>
       <primitive object={gltf.scene} scale={60.0} dispose={null}/>
@@ -43,6 +46,17 @@ const Model = () => {
   );
 };
 
+
+/* GLB LOADER */
+
+// const Model = () => {
+//   const { scene } = useGLTF( "./untitled.glb" );
+//   return (
+//     <>
+//       <primitive object={scene} scale={60.0} dispose={null}/>
+//     </>
+//   );
+// };
 
 var fovNum = 100
 var x = 0;
