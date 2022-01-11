@@ -24,7 +24,7 @@ function Home (){
                 content="A portfolio site built in React by Zach Imerzel, a Front-End Developer based in Austin, TX. He has hands-on experience building websites from scratch, with a mobile-first approach. He likes React, JavaScript, HTML, CSS."
                 />
             </Helmet>
-            <div>
+            <div className='home'>
                 <section id="title-bg">
                     <div className="banner">
                     </div>        

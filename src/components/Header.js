@@ -6,8 +6,10 @@ const Header = () => {
         <>
         <div className="header">
             <div className="header__info">
-                <h1>I'm Zach Imerzel</h1>
-                <p> A <mark>front-end developer</mark> based in Berthoud, CO</p>
+                <div className="header__title">
+                    <h1>I'm Zach Imerzel</h1>
+                    <p> A <mark>front-end developer</mark> based in Berthoud, CO</p>
+                </div>
             </div>
             <div className="header__nav">
                 <Nav />

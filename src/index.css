@@ -1,7 +1,7 @@
 .porsche{
   background-color: #0f0f0f !important;
   height: 98vh;
-  width: 90vw;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   background-image: url("./assets/Images/metal.webp");
@@ -73,25 +73,26 @@ p{
   font-family: Arkship;
 }
 
-.header__info{
+.header{
   position: relative;
-  margin-left: 4%;
 }
 
-.header__info h1{
+.header__info{
   position: absolute;
-  left: 90px;
+}
+
+.header__title h1{
+  margin-left: 80px;
   color: whitesmoke;
   font-family: Azonix;
 }
 
-.header__info p{
-  position: absolute;
+.header__title p{
+  margin-top: -10px;
+  margin-left: 90px;
   max-width: 480px;
   padding-left: 20px;
   padding-right: 20px;
-  top: 50px;
-  left: 90px;
   color: whitesmoke;
   font-family: Azonix;
 }
@@ -190,10 +191,8 @@ nav ul li a{
   border-radius: 10px;
   height: 60px;
   width: 60px;
-  padding: 16px;
   border: none;
   cursor: pointer;
-
 }
 
 /* Dropdown button on hover & focus */
@@ -207,14 +206,18 @@ nav ul li a{
   display: inline-block;
 }
 
+.dropdownRel{
+  position: absolute;
+}
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  right: 0px;
+  right: -10px;
   text-align: center;
-  min-width: 160px;
-  width: 80vw;
+  min-width: 100px;
+  width: 70vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -237,14 +240,18 @@ nav ul li a{
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
+.home{
+  width: 100%;
+}
+
 .home__about{
   width: 80%;
   margin-right: auto;
   margin-left: auto;
+  padding: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding:60px
 }
 
 span{
@@ -252,7 +259,7 @@ span{
   padding-left: 10px;
 }
 
-.home__featured__projects{
+.home__featured__projects__content{
   background-size: cover;
   padding-top: 20px;
   margin-right: auto;
@@ -271,6 +278,7 @@ span{
 
 
 .projects__content h2{
+  padding: 40px;
 text-align: center;
 }
 
@@ -476,6 +484,14 @@ margin: 0 auto;
   color: #9147fe;
 }
 
+.project__card__text h3{
+  margin-top:20px;
+}
+
+.project__card__text p{
+margin-bottom: 40px !important;
+}
+
 /* Work */
 
 .projects__content{
@@ -570,6 +586,7 @@ padding: 10px;
   margin: 20px auto;
   text-decoration: none;
   font-family: Azonix;
+  text-align: center;
 }
 
 .button__top-bottom {
@@ -603,9 +620,17 @@ padding: 10px;
   color: black;
 }
 
-@media all and (max-width:500px){
+@media all and (max-width:600px){
   .porsche{
     pointer-events: none;
+  }
+  .header__title{
+    width: 100% !important;
+    margin: 0 -60px;
+    padding: 20px;
+  }
+  .dropdown-content{
+    right: 0px !important;
   }
 }
 
@@ -613,27 +638,24 @@ padding: 10px;
   .header{
     margin-top: 30px;
   }
-  .header__info{
-    margin-right: -2% !important;
+  h1,h2,h3{
+    font-size: .8rem;
+  }
+  p{
+    font-size: .7rem;
   }
   .row{
     font-size: 0.68rem;
     padding-left: 0px;
     padding-right: 20px;
   }
-  .header__info p{
-    left: 40px;
-    top: 40px;
-  }
   .header__info h1{
     font-size: 1.7rem;
-    left: 45px;
     text-align: center;
   }
   .scrollToTop i{
     right: 40px;
   }
-
   .home__featured__projects__content{
     grid-template-columns: repeat(1,1fr);
     column-gap: 4px;
@@ -643,6 +665,12 @@ padding: 10px;
   }
   .about__text h1{
     text-align: center;
+  }
+  .project__card__text h3{
+    font-size: .9rem;
+  }
+  .project__card__text p{
+    font-size: .8rem;
   }
 }
 
@@ -655,6 +683,9 @@ padding: 10px;
   }
   .header{
     margin-top: 0px;
+  }
+  .dropdown-content{
+    right: 0px !important;
   }
 }
 
@@ -677,6 +708,9 @@ padding: 10px;
   }
   .project__text h3{
     width: 400px;
+  }
+  .dropdown-content{
+    right: -10px !important;
   }
 }
 
