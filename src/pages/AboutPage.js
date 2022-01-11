@@ -21,9 +21,8 @@ const AboutPage = () => {
         'Web Development...',
         'Technology...',
         'Adventuring...',
-        'Art...',
-        'Automotive Industry...',
-        'Meeting New People...'
+        'Music...',
+        'Automotive Industry...'
       ]
     });
   }, []);
