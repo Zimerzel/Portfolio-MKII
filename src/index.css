@@ -175,11 +175,6 @@ nav ul li a{
     margin-right: -130px;
     margin-top: 50px;
   }
-
-  .dropbtn{
-    width: 50px !important;
-    height: 50px !important;
-  }
 }
 
 /* Dropdown Button */
@@ -248,7 +243,8 @@ nav ul li a{
   width: 80%;
   margin-right: auto;
   margin-left: auto;
-  padding: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -632,6 +628,11 @@ padding: 10px;
   .dropdown-content{
     right: 0px !important;
   }
+  .dropbtn{
+    margin-top: 30px;
+    width: 50px !important;
+    height: 50px !important;
+  }
 }
 
 @media all and (min-width: 300px){
@@ -640,6 +641,11 @@ padding: 10px;
   }
   h1,h2,h3{
     font-size: .8rem;
+  }
+  .about__text h1{
+    font-size: .8rem;
+    height: 25px;
+    padding-top: 10;
   }
   p{
     font-size: .7rem;
@@ -686,6 +692,9 @@ padding: 10px;
   }
   .dropdown-content{
     right: 0px !important;
+  }
+  .dropbtn{
+    margin-right: -10px;
   }
 }
 
