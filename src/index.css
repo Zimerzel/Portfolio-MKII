@@ -4,7 +4,7 @@
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
-  background-image: url("./assets/Images/metal.jpg");
+  background-image: url("./assets/Images/metal.webp");
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
@@ -184,7 +184,7 @@ nav ul li a{
 /* Dropdown Button */
 
 .dropbtn {
-  background-image: url("./assets/Images/menu.png");
+  background-image: url("./assets/Images/menu.webp");
   background-size: cover;
   border: rgb(153, 153, 153) 2px solid !important;
   border-radius: 10px;

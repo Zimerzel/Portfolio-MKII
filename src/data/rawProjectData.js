@@ -1,29 +1,32 @@
 /* Meal Match Images */
-import mealMock1 from '../assets/Images/MealMatch/mock1.png'
-import mealMock2 from '../assets/Images/MealMatch/mock2.png'
-import mealMock3 from '../assets/Images/MealMatch/mock3.png'
+import mealMock1 from '../assets/Images/MealMatch/mock1.webp'
+import mealMock2 from '../assets/Images/MealMatch/mock2.webp'
+import mealMock3 from '../assets/Images/MealMatch/mock3.webp'
+import mealMatch from '../assets/Images/MealMatch/mealmatch.webp'
 
 /* Pikes Peak */
-import pikesMock1 from '../assets/Images/Pikes/mock1.png'
-import pikesMock2 from '../assets/Images/Pikes/mock2.png'
-import pikesMock3 from '../assets/Images/Pikes/mock3.png'
+import pikesPeak from '../assets/Images/Pikes/pikes.webp'
+import pikesMock1 from '../assets/Images/Pikes/mock1.webp'
+import pikesMock2 from '../assets/Images/Pikes/mock2.webp'
+import pikesMock3 from '../assets/Images/Pikes/mock3.webp'
 
 /* Portfolio */
-import portfolio from '../assets/Portfolio/portfolio.png'
-import portMock1 from '../assets/Portfolio/mock1.png'
-import portMock2 from '../assets/Portfolio/mock2.png'
-import portMock3 from '../assets/Portfolio/mock3.png'
+import portfolio from '../assets/Images/Portfolio/portfolio.webp'
+import portMock1 from '../assets/Images/Portfolio/mock1.webp'
+import portMock2 from '../assets/Images/Portfolio/mock2.webp'
+import portMock3 from '../assets/Images/Portfolio/mock3.webp'
 
 /* Weather */
-import weatherMock1 from '../assets/Images/Weather/mock1.png'
-import weatherMock2 from '../assets/Images/Weather/mock2.png'
-import weatherMock3 from '../assets/Images/Weather/mock3.png'
+import weather from '../assets/Images/Weather/weather.webp'
+import weatherMock1 from '../assets/Images/Weather/mock1.webp'
+import weatherMock2 from '../assets/Images/Weather/mock2.webp'
+import weatherMock3 from '../assets/Images/Weather/mock3.webp'
 
 
 export const rawProjectData = [
   {
     id: 'MealMatch',
-    image: 'https://user-images.githubusercontent.com/79726069/116947491-8ab70000-ac42-11eb-9352-da6b3edb4c04.PNG' ,
+    image: mealMatch ,
     imageMock1: mealMock1,
     imageMock2: mealMock2,
     imageMock3: mealMock3,
@@ -49,7 +52,7 @@ export const rawProjectData = [
   },
   {
     id: 'PPIHC',
-    image: 'https://user-images.githubusercontent.com/79726069/138946590-25457630-3955-4c31-b419-08beb6c8a6d7.PNG',
+    image: pikesPeak,
     imageMock1: pikesMock1,
     imageMock2: pikesMock2,
     imageMock3: pikesMock3,
@@ -101,10 +104,10 @@ export const rawProjectData = [
   },
   {
     id: 'Weather Today',
+    image: weather ,
     imageMock1: weatherMock1,
     imageMock2: weatherMock2,
     imageMock3: weatherMock3,
-    image: 'https://user-images.githubusercontent.com/79726069/116834786-46195f00-ab85-11eb-848a-25b745b30e5d.PNG' ,
     title: 'Weather Today',
     subtitle: 'Find out the weather anywhere in the world',
     briefDescription:

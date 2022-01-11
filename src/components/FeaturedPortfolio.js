@@ -24,6 +24,8 @@ const HomeFeaturedProjects = () => {
                   <img
                     src={homeFeaturedProject.image}
                     alt={`cover of the project ${homeFeaturedProject.title}`}
+                    width="600px"
+                    height="300px"
                   />
                   <div className="project__card__text">
                     <a
