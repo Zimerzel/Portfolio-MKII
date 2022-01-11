@@ -27,22 +27,22 @@ const Nav = () => {
     <nav className="main__nav">
       <ul>
         <li>
-          <NavLink to="/" className="nav-link">
+          <NavLink to="/" className="nav-link hover-underline-animation">
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/work" className="nav-link">
+          <NavLink to="/work" className="nav-link hover-underline-animation">
             Work
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about" className="nav-link">
+          <NavLink to="/about" className="nav-link hover-underline-animation" >
             About
           </NavLink>
         </li>
         <li>
-          <HashLink to="#contact" smooth className="nav-link">
+          <HashLink to="#contact" smooth className="nav-link hover-underline-animation">
             Contact
           </HashLink>
         </li>

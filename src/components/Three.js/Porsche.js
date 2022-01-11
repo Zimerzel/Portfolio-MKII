@@ -37,26 +37,26 @@ function Loader(){
 
 /* GLTF LOADER */
 
-const Model = () => {
-  const gltf = useLoader(GLTFLoader, "./scene1.gltf");
-  return (
-    <>
-      <primitive object={gltf.scene} scale={60.0} dispose={null}/>
-    </>
-  );
-};
+// const Model = () => {
+//   const gltf = useLoader(GLTFLoader, "./scene1.gltf");
+//   return (
+//     <>
+//       <primitive object={gltf.scene} scale={60.0} dispose={null}/>
+//     </>
+//   );
+// };
 
 
 /* GLB LOADER */
 
-// const Model = () => {
-//   const { scene } = useGLTF( "./untitled.glb" );
-//   return (
-//     <>
-//       <primitive object={scene} scale={60.0} dispose={null}/>
-//     </>
-//   );
-// };
+const Model = () => {
+  const { scene } = useGLTF( "./untitled.glb" );
+  return (
+    <>
+      <primitive object={scene} scale={60.0} dispose={null}/>
+    </>
+  );
+};
 
 var fovNum = 100
 var x = 0;

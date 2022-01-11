@@ -137,15 +137,17 @@ right: 90px;
 font-family: Azonix;
 }
 
+
 nav ul li {
   display: inline;
 }
 
 nav ul li a{
-  padding-left: 10px;
+  margin-left: 10px;
   color: whitesmoke;
   text-decoration: none;
 }
+
 
 .nav__dropdown{
   visibility: hidden;
@@ -157,6 +159,27 @@ nav ul li a{
   border-radius: 10px;
 }
 
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #9147fe;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
 @media only screen and (max-width: 1080px) {
   .main__nav {
