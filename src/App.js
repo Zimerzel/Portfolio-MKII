@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter, Routes, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -34,8 +34,7 @@ function App() {
             <Porsche />
             <main>
               <Routes>
-                <Route exact path='/' render= {() => (<Redirect to='/home'/>)} />
-                <Route path="/home" element={<Home />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/work" element={<WorkPage />} />
                 {/* <Route path="/project-:id" element={<SingleProject />} /> */}
