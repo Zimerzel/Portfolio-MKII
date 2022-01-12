@@ -151,6 +151,7 @@ nav ul li a{
 
 .nav__dropdown{
   visibility: hidden;
+  height: 100px!important;
 }
 
 .nav__dropdown ul{
@@ -252,7 +253,7 @@ nav ul li a{
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  text-decoration: underline 2px solid;
+  text-decoration: underline 3px solid black;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
