@@ -723,6 +723,9 @@ padding: 10px;
 }
 
 @media all and (min-width: 1040px) {
+  .home__about p{
+    padding: 0 15%;
+  }
 
   h1,h2,h3{
     font-size: 2rem;
