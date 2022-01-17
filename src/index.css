@@ -723,8 +723,17 @@ padding: 10px;
 }
 
 @media all and (min-width: 1040px) {
-  h2 {
-    font-size: 3rem;
+
+  h1,h2,h3{
+    font-size: 2rem;
+  }
+  #about-bubble{
+    font-size: 2rem;
+    height: 35px;
+    padding-top: 10;
+  }
+  p{
+    font-size: .9rem;
   }
   .home__featured__projects__content{
     grid-template-columns: repeat(1,1fr);
