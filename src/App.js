@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Aos from 'aos';
@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import PageNoMatch from './components/PageNoMatch';
 import ScrollButton from './components/ScrollButton';
 import Porsche from './components/Three.js/Porsche';
+import { Spinner } from 'react-bootstrap';
 
 
 
@@ -32,17 +33,19 @@ function App() {
             <ScrollButton />
             <Header />
             <Porsche />
-            <main>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<AboutPage />} />
-                <Route path="/work" element={<WorkPage />} />
-                {/* <Route path="/project-:id" element={<SingleProject />} /> */}
-                <Route element={<PageNoMatch />} />
-              </Routes>
-            </main>
-            <Footer />
-          </div>
+              <Suspense fallback={<div><Spinner/></div>}>
+                <main>
+                  <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<AboutPage />} />
+                    <Route path="/work" element={<WorkPage />} />
+                    {/* <Route path="/project-:id" element={<SingleProject />} /> */}
+                    <Route element={<PageNoMatch />} />
+                  </Routes>
+                </main>
+                <Footer />
+              </Suspense>
+            </div>
         </BrowserRouter>
       </HelmetProvider>
     );
