@@ -15,6 +15,7 @@ const Header = () => {
                 <Nav />
             </div>
             <div className="arrow bounce">
+                <p><i class='bx bx-mouse bx-md'></i></p>
                 <i className='bx bxs-down-arrow'></i>
             </div>
         </div>  

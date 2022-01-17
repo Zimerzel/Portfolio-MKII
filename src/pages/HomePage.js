@@ -31,7 +31,7 @@ function Home (){
                 </section>
                 <section>
                     <div className='home__about'>
-                        <h2>One step at a time<span>.</span></h2>
+                        <h2 className='section__title'>One step at a time<span>.</span></h2>
                         <p> 
                             A self-motivated front-end developer with hands on experience
                             designing and building websites from scratch. My goal is to build 

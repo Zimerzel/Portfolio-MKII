@@ -23,6 +23,8 @@
   bottom: 10px;
   right: 1.5vw;
   color: #9147fe;
+  background-color: #000000;
+  border-radius: 20px;
 }
 
 body {
@@ -101,16 +103,30 @@ mark{
   background-color: #9147fe;
 }
 
-.arrow i{
-  position: absolute;
-  top: 96vh;
-  right: 10px;
-  color:#9147fe
-}
-
 .arrow {
   text-align: center;
+  z-index: 5;
+  display: inline;
+  position: absolute;
+  top: 90vh;
+  right: 8vw;
+  height: 100px;
 }
+
+.arrow i{
+  position: absolute;
+  top: 50px;
+  color:#9147fe;
+  z-index: 5;
+}
+
+.arrow p{
+  position: absolute;
+  top: -50px;
+  right: 10px;
+  /* transform: rotate(90deg); */
+}
+
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
@@ -277,6 +293,7 @@ nav ul li a{
 span{
   color: #9147fe;
   padding-left: 10px;
+  font-size: x-large;
 }
 
 .home__featured__projects__content{
@@ -660,6 +677,9 @@ padding: 10px;
 }
 
 @media all and (min-width: 300px){
+  .section__title{
+    font-size: 1.8rem !important;
+  }
   .header{
     margin-top: 30px;
   }
@@ -668,8 +688,8 @@ padding: 10px;
   }
   .about__text h1{
     font-size: .8rem;
-    height: 25px;
-    padding-top: 10;
+    height: 30px;
+    padding-top: 5px;
   }
   p{
     font-size: .7rem;
@@ -728,7 +748,7 @@ padding: 10px;
   }
 
   h1,h2,h3{
-    font-size: 2rem;
+    font-size: 1.1rem;
   }
   #about-bubble{
     font-size: 2rem;
