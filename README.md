@@ -76,4 +76,4 @@ Email : Zach.imerzel@gmail.com
 Github : https://github.com/Zimerzel
 
 ## Helpful Links
-* Firebase Deployment: https://zachimerzel-477ff.web.app/
+* Firebase Deployment: https://zachimerzel.com/
