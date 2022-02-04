@@ -1,4 +1,4 @@
-.porsche{
+.mando{
   background-color: #0f0f0f !important;
   height: 98vh;
   width: 90%;
@@ -660,7 +660,7 @@ padding: 10px;
 }
 
 @media all and (max-width:600px){
-  .porsche{
+  .mando{
     pointer-events: none;
   }
   .header__title{
