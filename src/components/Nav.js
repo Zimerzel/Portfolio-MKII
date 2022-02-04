@@ -1,4 +1,5 @@
 //Nav.js component, to return a navigation for header section
+import React from 'react'
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 

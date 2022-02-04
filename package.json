@@ -1,7 +1,8 @@
 {
-  "name": "client",
-  "version": "0.1.0",
-  "private": true,
+  "name": "portfolio-mkii",
+  "version": "1.0.0",
+  "description": "--------------------------------------------------------------------------------------------------------------- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![React-Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) ![Three.js](https://img.shields.io/static/v1?style=for-the-badge&message=Three.js&color=000000&logo=Three.js&logoColor=FFFFFF&label=) ![Firebase](https://img.shields.io/static/v1?style=for-the-badge&message=Firebase&color=222222&logo=Firebase&logoColor=FFCA28&label=)",
+  "main": "index.js",
   "dependencies": {
     "@react-three/drei": "^8.3.1",
     "@react-three/fiber": "^7.0.24",
@@ -9,11 +10,11 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
-    "drei": "^2.2.21",
+    "drei": "^1.0.0",
     "firebase": "^9.6.2",
     "framer-motion": "^5.5.5",
     "ityped": "^1.0.3",
-    "react": "^17.0.1",
+    "react": "^17.0.2",
     "react-bootstrap": "^2.1.0",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
@@ -22,7 +23,7 @@
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "^5.0.0",
     "react-three-fiber": "^5.3.10",
-    "three": "^0.127.0",
+    "three": "^0.137.5",
     "valtio": "^0.4.8",
     "web-vitals": "^2.1.2"
   },
@@ -32,11 +33,15 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zimerzel/Portfolio-MKII.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zimerzel/Portfolio-MKII/issues"
   },
   "browserslist": {
     "production": [

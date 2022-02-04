@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import Contact from '../components/Contact';
@@ -24,12 +24,13 @@ const WorkPage = () => {
   }, []);
 
   return (
+    <>
     <motion.div
     className="work-container main-wrapper"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ ease: 'easeInOut', duration: 0.3 }}
-  >
+    >
     <Helmet>
       <title>Zach Imerzel | Work</title>
       <meta
@@ -80,6 +81,7 @@ const WorkPage = () => {
     </section>
     <Contact />
     </motion.div>
+    </>
   );
 };
 

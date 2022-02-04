@@ -168,12 +168,14 @@ nav ul li a{
 .nav__dropdown{
   visibility: hidden;
   height: 100px!important;
+  z-index: 3;
 }
 
 .nav__dropdown ul{
   background-color: #9147fe;
   list-style-type: none;
   border-radius: 10px;
+  z-index: 3
 }
 
 .hover-underline-animation {
