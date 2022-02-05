@@ -60,8 +60,7 @@ const AboutPage = () => {
               industry. With solid fundamentals in various front-end programming 
               languages as well as web design, I mostly enjoy working with React 
               JS, HTML5, CSS3, and JavaScript. In addition to web development, 
-              one of my greatest interests would be Sci-Fi! Who knows, maybe some of those shows/movies
-              could become reality one day...
+              one of my greatest interests would be Sci-Fi!
               </p>
             </article>
           </section>
