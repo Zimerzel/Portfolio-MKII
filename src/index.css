@@ -25,6 +25,7 @@
   color: #9147fe;
   background-color: #000000;
   border-radius: 20px;
+  z-index: 4;
 }
 
 body {
@@ -544,6 +545,7 @@ margin-bottom: 40px !important;
   padding: 20px 0;
   margin: 20px auto;
   border-radius: 10px;
+  z-index: 1;
 }
 
 #imageMock1{

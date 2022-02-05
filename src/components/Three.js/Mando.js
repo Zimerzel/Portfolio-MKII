@@ -108,7 +108,6 @@ export default function Mando() {
         </Suspense>
       </Canvas>
     </div>
-    );
     </>
   )
 
