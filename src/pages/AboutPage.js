@@ -97,6 +97,7 @@ const AboutPage = () => {
                     <li>Adobe XD</li>
                     <li>Illustrator</li>
                     <li>Photoshop</li>
+                    <li>Figma</li>
                   </ul>
               </div>
             </div>
