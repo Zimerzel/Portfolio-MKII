@@ -609,8 +609,7 @@ padding: 10px;
 }
 
 #project__card__container{
-  height: 250px;
-  max-width: 480px;
+  height: 200px;
 }
 
 .project__card__content img{
