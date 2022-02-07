@@ -21,12 +21,14 @@ const HomeFeaturedProjects = () => {
             return (
               <div className="featured__project__card" key={index}>
                 <div className="project__card__content">
+                  <div id="project__card__container">
                   <img
                     src={homeFeaturedProject.image}
                     alt={`cover of the project ${homeFeaturedProject.title}`}
                     width="600px"
                     height="300px"
                   />
+                  </div>
                   <div className="project__card__text">
                     <a
                       href={homeFeaturedProject.livesite}
